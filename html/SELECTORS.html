@@ -1,11 +1,80 @@
 <html>
     <head>
         <tilte>SELECTORS</tilte>
+        <style>
+            .container{
+                color:aquamarine;
+                text-align: right;
+                margin: 10px;
+                background-color: whitesmoke;
+                border: top 1px; 
+                font-style: italic;
+                box-shadow: inset;
+                width: fit-content;
+                height: min-content;
+            }
+            .selector{
+                color: rgb(red, green, blue);
+                padding:0cqh;
+                background-size: auto;
+                font-size: medium;
+                font-style: oblique;
+                font: optional;
+                cursor: pointer;
+                border: 1px solid grey;
+            }
+            p{
+                font-size: larger;
+                font-style: normal;
+                color:red;
+                color: aquamarine;
+                display: flex;
+            }
+            #name{
+                color: aqua;
+            }
+            input[type="text"]{
+                color: black;
+            }
+            a:hover{
+                color: blueviolet;
+            }
+            div p{
+                color: black;
+                font-size: larger;
+                font-style: italic;
+                background-color:white;
+            }
+            span > p{
+                font-size: larger;
+                font-style: normal;
+                color:blue;
+                font-size: large;
+                font-style: italic;
+            }
+            div + p{
+                font-size: larger;
+                font-style: normal;
+                color:red;
+            }
+        </style>
     </head>
     <body>
-        <input class="selectors" id="class">
-        <p>HELLO EVERYONE</p>
-        <a href="www.gmail.com"
-
+        
+        <div class="selectors" id="class">
+        <h1>HELLO EVERYONE</h1><br>NAME:
+        <input type="text" id="name" name="name" value="SAMEENA">NAME:
+        <input type="text" id="name" name="name" value="PRINCY">NAME:
+        <input type="text" id="name" name="name" value="MANISHA">
+        <p>THIS IS SAMEENA</p>
+        <p>DAY-3</p>
+        <div class="container" name="container">
+           <p>FROM ANURAG ENGINEERING COLLEGE</p>
+           <h1>madhu</h1>
+        <span>
+            <p>CSE-B</p>
+        </span>
+        <a href="www.gmail.com">GMAIL</a><br>
+        
     </body>
 </html>

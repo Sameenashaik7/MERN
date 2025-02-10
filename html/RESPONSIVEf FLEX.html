@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RESPONSIVE FLEX DESIGN</title>
+        <style>
+            .flex-container{
+                color:navy;
+                background-color:solid gray;
+                font-size: larger;
+                font-style: oblique;
+                display:flex;
+                flex-direction: column-reverse;
+                justify-content: end;
+                align-items: center;
+            }
+            .flex-container > div{
+                color: rosybrown;
+                background-color:black
+            }
+            @media (max-width: 800px){
+              .flex-container {
+                   flex-direction: column-reverse;
+               }
+            } 
+            .flex-item-left{
+                flex-direction:column-reverse;
+                color: blueviolet;
+            }
+            .direction{
+                flex-direction:column;
+                color:red;
+                display: flex;
+                background-color:solid grey;
+                font-size: large;
+                font-style: oblique;
+                justify-content:italic;
+                align-items:start;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: solid ghostwhite;">RESPONSIVE FLEX DESIGN</h1>
+        <p>The "flex-direction: row;" stacks the flex items horizontally (from left to right).</p>
+        <p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom).</p>
+        <p><b>Resize the browser window to see that the direction changes when the screen size is 800px wide or smaller.</b></p>
+
+        <div class="flex-container">
+           <div class="flex-item-left">About Me</div>
+           <div class="flex-item-right">Contact</div>
+        </div>
+        <div class="direction">
+            <p>checking direction of content</p>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </body>
+</html>
